@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FastDrop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>⚡ FastDrop</h1>
+
+  <div class="card">
+    <h2>Send File</h2>
+    <input type="file" id="fileInput">
+    <button onclick="sendFile()">Upload</button>
+    <p id="code"></p>
+  </div>
+
+  <div class="card">
+    <h2>Receive File</h2>
+    <input type="text" id="codeInput" placeholder="Enter Code">
+    <button onclick="receiveFile()">Download</button>
+  </div>
+
+  <div class="progress-bar">
+    <div id="progress"></div>
+  </div>
+</div>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
